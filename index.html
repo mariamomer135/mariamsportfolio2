@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5dd0ac7bc5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+
+
+
+<div id="header">
+    <div class="container">
+        <nav>
+         <!----  <img src="images2/logo3000.png" alt="logo"> ---- ----->
+           <ul id="sidemenu">
+
+                <li><a href= "#header">HOME    </a></li>
+                <li><a href= "#about">ABOUT    </a></li>
+                <li><a href= "#portfolio">PORTFOLIO    </a></li>
+                <li><a href= "#contact">CONTACT    </a></li>
+             <!--   <li><a href= "#hobbies">HOBBIES    </a></li> ----->
+                <i class="fas fa-times" onclick="closemenu()"></i>
+           </ul>
+           <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+
+            
+            
+            <h1><br><span> Mariam Omer</span> </h1>
+            <p> COMPUTER SCIENCE STUDENT<b></p>
+        </div>
+    </div>
+
+</div>
+
+
+<!-----------------------about------------------ ----->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images2/myphoto.jpg">
+            </div>
+
+            <div class="about-col-2">
+                <h1 class="sub-title"> About Me</h1>
+                <p class="aboutparagraph"> Hello! My name is Mariam Omer, and I am a senior pursuing a degree in Computer Science at Georgia State University! 
+                    I enjoy problem-solving and actively looking for solutions with programs and design mockups to both satisfy my 
+                    curiosity and discern whether efficiency can be boosted in a variety of scenarios. Although my skills have yet 
+                    to reach their full potential, I am eager and readily available to learn more!                  
+                    As you toggle through my portfolio, you will have access to some of my previous 
+                    works on a variety of programs.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">SKILLS</p>
+                    <p class="tab-links" onclick="opentab('experience')">EXPERIENCE</p>
+                    <p class="tab-links" onclick="opentab('education')">EDUCATION</p>
+                    <p class="tab-links" onclick="opentab('relevantcoursework')">RELEVANT COURSEWORK</p>
+                    <p class="tab-links" onclick="opentab('libraries')">PYTHON LIBRARIES</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Coding/Web Development</span><br>Python<br>SQL<br>Javascript <br>HTML<br>CSS <br></li>
+                        <li><span>UI/UX</span><br>Figma</li>
+                        <li><span>Graphic Design</span><br>Autodesk Inventor <br>AutoCAD <br>Adobe Illustrator <br>Adobe Photoshop </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>July 2021 - May 2024</span><br>Office Depot</li>
+                        <li><span>November 2023 - December 2023</span><br>Paragon One Externship Lab</li>
+                        <li><span>January 2017 - August 2022</span><br>Stem Tutor</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>August 2021 - May 2025</span><br>Georgia State University</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="relevantcoursework">
+                    <ul>
+                        <li><span> Principles of Comp Sci I</span></li>
+                        <li><span> Principles of Comp Sci II</span></li>
+                        <li><span> Theoretical Foundations of Comp Sci</span></li>
+                        <li><span> Linear Algebra</span></li>
+                        <li><span> Probability and Stats of CS</span></li>
+                        <li><span> Data Structures and Algorithms</span></li>
+                        <li><span> Computer Org and Programming</span></li>
+                        <li><span> System-level Programming</span></li>
+                        <li><span> Design & Analysis: Algorithms</span></li>
+                        <li><span> Software Development-CTW</span></li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="libraries">
+                    <ul>
+                        <li><span> NumPy</span></li>
+                        <li><span> Matplotlib</span></li>
+                        <li><span> Pandas</span></li>
+                    </ul>
+                </div>
+         
+         
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------------------My work------------------ ----->
+<div id="portfolio">
+
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <pre>&nbsp;</pre>
+        <p class="myworks-code">Coding Projects</p>
+        <div class="work-list">
+            
+            <div class="work">
+                <img src="images2/cc+.png" alt="">
+                <div class="layer">
+                    <h3>Calculator+ App Design</h3>
+                    <p> Designed an emergency response app that is disguised as a regular calculator to <br>
+                        help promote women’s safety in situations where they can’t directly call the <br>
+                        police as it would be detrimental to their current safety </p>
+                    <a href="https://docs.google.com/presentation/d/1toc6YMpaHB-wRPXFRiplgyg72mg_6wW2H2mribT9O1Y/edit?usp=sharing"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images2/snakess.png" alt="">
+                <div class="layer">
+                    <h3>Python Snake Game</h3>
+                    <p>Developed a classic Snake game using Python and Tkinter for the graphical interface</p>
+                    <a href="https://drive.google.com/drive/folders/14RmUKIrtWQgdSkJ9CMrfPjo6dArSgOxw?usp=sharing"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images2/book.jpg" alt="">
+                <div class="layer">
+                    <h3>Trending Books Website</h3>
+                    <p>Currently devloping a website that features a real-time chat where users can discuss 
+                        their favorite books and view the top 5 trending books based on their input. </p>
+                    <a href="https://www.figma.com/file/1xdQgPwX83Ozq5AwJdKEis/Untitled?type=design&mode=design&t=bG87FKkfFYvZzLY5-1"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <pre>&nbsp;</pre>
+        <p class="myworks-code">Graphic Design Projects</p>
+        <div class="work-list">
+            <div class="work">
+                <img src="images2/chocolate.jpg" alt="">
+                <div class="layer">
+                    <h3>Adobe Photoshop - Advertisement</h3>
+                    <p> For my graphic design class, I undertook the task of crafting a lifelike poster advertisement using 
+                        Adobe Photoshop. The challenge was to showcase any random object in a realistic manner. I opted for 
+                        a piece of Ghirardelli chocolate as my subject. The constraints were clear: rely solely on Adobe Photoshop 
+                        functions to bring the advertisement to life. </p>
+                   <!-----------------------My work------------------ <a href="https://docs.google.com/presentation/d/1toc6YMpaHB-wRPXFRiplgyg72mg_6wW2H2mribT9O1Y/edit?usp=sharing"><i class="fas fa-external-link-alt"></i></a> ----->
+                </div>
+            </div>
+            <div class="work">
+                <img src="images2/bottle.png" alt="">
+                <div class="layer">
+                    <h3>Autodesk Inventor - Reusable Water Bottle</h3>
+                    <p>This water bottle design originated from an engineering competition where participants 
+                        were tasked with creating a 3D model of any object, such as a machine part, tool, or device. 
+                        I opted to develop a representation of a reusable water bottle, and the design successfully 
+                        made it to the finalist stage in the competition.</p>
+                     <!-----------------------My work------------------ <a href="https://docs.google.com/presentation/d/1toc6YMpaHB-wRPXFRiplgyg72mg_6wW2H2mribT9O1Y/edit?usp=sharing"><i class="fas fa-external-link-alt"></i></a> ----->
+                </div>
+            </div>
+            <div class="work">
+                <img src="images2/poster.png" alt="">
+                <div class="layer">
+                    <h3>Adobe Photoshop - Movie Poster</h3>
+                    <p>For a graphic design class assignment, I was tasked with crafting a movie poster using Adobe Photoshop 
+                        features exclusively. The unique twist was that the movie name was generated randomly. This challenge
+                         pushed my creativity as I had to rely solely on the tools within Adobe Photoshop.</p>
+                                            <!-----------------------My work------------------ <a href="https://docs.google.com/presentation/d/1toc6YMpaHB-wRPXFRiplgyg72mg_6wW2H2mribT9O1Y/edit?usp=sharing"><i class="fas fa-external-link-alt"></i></a> ----->
+                </div>
+            </div>
+
+        </div>
+    
+    </div>
+
+    <div class="container">
+        <pre>&nbsp;</pre>
+        <p class="myworks-code">Certifications</p>
+        <div class="work-list">
+            <div class="work">
+                <img src="images2/linkedincertif.jpg" alt="">
+                <div class="layer">
+                    <h3>Career Essentials in Project Management by Microsoft and Linkedin</h3>
+    
+                   <!-----------------------My work------------------ <a href="https://docs.google.com/presentation/d/1toc6YMpaHB-wRPXFRiplgyg72mg_6wW2H2mribT9O1Y/edit?usp=sharing"><i class="fas fa-external-link-alt"></i></a> ----->
+                </div>
+            </div>
+            <div class="work">
+                <img src="images2/codepathcertif.jpg" alt="">
+                <div class="layer">
+                    <h3>Intro to Web Development by Codepath</h3>
+
+                     <!-----------------------My work------------------ <a href="https://docs.google.com/presentation/d/1toc6YMpaHB-wRPXFRiplgyg72mg_6wW2H2mribT9O1Y/edit?usp=sharing"><i class="fas fa-external-link-alt"></i></a> ----->
+                </div>
+            </div>
+            <div class="work">
+                <img src="images2/ignitecertif.png" alt="">
+                <div class="layer">
+                    <h3>AI-Powered VC Deal Sourcing Externship Lab - Paragon One</h3>
+                   
+                                            <!-----------------------My work------------------ <a href="https://docs.google.com/presentation/d/1toc6YMpaHB-wRPXFRiplgyg72mg_6wW2H2mribT9O1Y/edit?usp=sharing"><i class="fas fa-external-link-alt"></i></a> ----->
+                </div>
+            </div>
+
+        </div>
+    
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-----------------------contact------------------ ----->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>mariam.omer2021@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>678-906-6962</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/mariam-omer-3ab782254/"><i class="fab fa-linkedin"></i> Visit my LinkedIn page!</a>
+                </div>
+                <a href="images2/Resume__Mariam Omer.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+
+            <div class="contact-form-container">
+                <form action="job.php" method="post" class="contact-form">
+                    <h2>Send me a message</h2>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------------<div id="hobbies">
+    <div class="container">
+        <div class="row">
+            <div class="contact-right">
+                <pre>&nbsp;</pre>
+                <h1 class="sub-title">Hobbies</h1>
+                <p>Reading</p>
+                <p>Knitting</p>
+                <p>Puzzles</p>
+                <p>Photography</p>
+                <p>Gaming</p>
+            </div>
+        </div>
+    </div>
+</div>
+----------contact------------------ ----->
+<div class="copyright">
+    <p>Copyright <i class="fa-regular fa-copyright"></i> Mariam Omer</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+            
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu")
+    function openmenu(){
+        sidemenu.style.right = "0";
+
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+        
+    }
+</script>
+</body>
+</html>
