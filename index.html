@@ -54,8 +54,7 @@
                 <h1 class="sub-title"> About Me</h1>
                 <p class="aboutparagraph"> Hello! My name is Mariam Omer, and I am a senior pursuing a degree in Computer Science at Georgia State University! 
                     I enjoy problem-solving and actively looking for solutions with programs and design mockups to both satisfy my 
-                    curiosity and discern whether efficiency can be boosted in a variety of scenarios. Although my skills have yet 
-                    to reach their full potential, I am eager and readily available to learn more!                  
+                    curiosity and discern whether efficiency can be boosted in a variety of scenarios. I am always eager and readily available to learn more!                  
                     As you toggle through my portfolio, you will have access to some of my previous 
                     works on a variety of programs.</p>
 
@@ -63,8 +62,8 @@
                     <p class="tab-links active-link" onclick="opentab('skills')">SKILLS</p>
                     <p class="tab-links" onclick="opentab('experience')">EXPERIENCE</p>
                     <p class="tab-links" onclick="opentab('education')">EDUCATION</p>
-                    <p class="tab-links" onclick="opentab('relevantcoursework')">RELEVANT COURSEWORK</p>
-                    <p class="tab-links" onclick="opentab('libraries')">PYTHON LIBRARIES</p>
+                    <p class="tab-links" onclick="opentab('relevantcoursework')">COURSEWORK</p>
+                    <p class="tab-links" onclick="opentab('libraries')">PYTHON LIB</p>
 
                 </div>
                 <div class="tab-contents active-tab" id="skills">
@@ -129,9 +128,9 @@
                 <img src="images2/cc+.png" alt="">
                 <div class="layer">
                     <h3>Calculator+ App Design</h3>
-                    <p> Designed an emergency response app that is disguised as a regular calculator to <br>
-                        help promote women’s safety in situations where they can’t directly call the <br>
-                        police as it would be detrimental to their current safety </p>
+                    <p> Designed an emergency response app that is disguised as a regular calculator to 
+                        help promote women’s safety in situations where they can’t directly call the 
+                        police as it would be detrimental to their current safety </p><br>
                     <a href="https://docs.google.com/presentation/d/1toc6YMpaHB-wRPXFRiplgyg72mg_6wW2H2mribT9O1Y/edit?usp=sharing"><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
@@ -269,32 +268,29 @@
 
 <!-----------------------contact------------------ ----->
 <div id="contact">
+    <h1 class="sub-title">Contact Me</h1>
     <div class="container">
         <div class="row">
             <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
+           
+
+                
                 <p><i class="fas fa-paper-plane"></i>mariam.omer2021@gmail.com</p>
                 <p><i class="fas fa-phone-square-alt"></i>678-906-6962</p>
                 <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/mariam-omer-3ab782254/"><i class="fab fa-linkedin"></i> Visit my LinkedIn page!</a>
+                <p>  <a href="https://www.linkedin.com/in/mariam-omer-3ab782254/"><i class="fab fa-linkedin"></i> Visit my LinkedIn page!</a></p> 
                 </div>
-                <a href="images2/Resume__Mariam Omer.pdf" download class="btn btn2">Download Resume</a>
+                <a href="images2/Resume__Mariam Omer.pdf" download class="btn btn3">Download Resume</a>
             </div>
 
-            <div class="contact-form-container">
-                <form action="job.php" method="post" class="contact-form">
-                    <h2>Send me a message</h2>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                    
-                    <input type="submit" value="Send Message">
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder = "Your Name" required>
+                    <input type="email" name="Email" placeholder = "Your Email" required>
+                    <textarea name="Message" rows="6" placeholder = "Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
                 </form>
+ 
             </div>
         </div>
     </div>
@@ -374,5 +370,19 @@
         
     }
 </script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwDXYdqhww9zsM78ABg26dFNafsEgHXmXrBvfJJnwC-dlC3kIZRmCDTUmf0E0ZWY8kj/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
 </body>
 </html>
